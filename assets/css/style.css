@@ -11,6 +11,13 @@ body {
     line-height: 1.5;
 }
 
+header,
+section,
+footer {
+    padding: 30px;
+}
+
+
 header {
     display: flex;
     flex-direction: column;
@@ -21,7 +28,7 @@ header {
 
 section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     gap: 30px;
     flex-wrap: wrap;
 }
@@ -29,4 +36,37 @@ section {
 footer {
     padding: 15px;
     background-color: #353535;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px dashed white;
+    padding: 2rem;
+    align-items: center;
+    flex: 1 1 30%;
+    position: relative;
+}
+
+.card h2 {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid white;
+    bottom: calc(100% - 20px);
+    background-color: #353535;
+    padding: .25rem;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+.code-card {
+    padding: 10px;
+    border: 2px solid white;
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
 }
