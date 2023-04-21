@@ -19,12 +19,14 @@ header {
     background-color: #353535;
 }
 
+section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
 footer {
     padding: 15px;
     background-color: #353535;
-}
-
-section {
-    display: flex;
-    flex-wrap: wrap;
 }
