@@ -18,12 +18,15 @@ footer {
     padding: 30px;
 }
 
-
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 25px;
+}
+
+header h1 {
+    color: rgb(231, 38, 205);
 }
 
 section {
@@ -42,11 +45,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     border: 2px dashed white;
-    padding: 2rem;
+    padding: 10px;
     align-items: center;
     flex: 1 1 30%;
     position: relative;
     margin-bottom: 20px;
+    height: auto;
 }
 
 .card h2 {
@@ -54,10 +58,11 @@ footer {
     position: absolute;
     z-index: 1;
     border: 1px solid white;
-    bottom: calc(100% - 20px);
+    bottom: calc(100% - 25px);
     background-color: #353535;
-    padding: .25rem;
-    width: 80%;
+    padding: 5px;
+    width: 75%;
+    border-radius: 10px;
 }
 
 .card p {
@@ -73,4 +78,18 @@ footer {
         rgba(232, 102, 236, 0.6) 100%
     );
     width: 100%;
+    color: white;
+    border-radius: 20px;
+}
+
+.code-card .card-header {
+    border-radius: 8px;
+    transitionL all 0.5s ease-in-out;
+}
+
+    .code-card:hover,
+    .code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
 }
