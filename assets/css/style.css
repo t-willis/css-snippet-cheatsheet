@@ -37,6 +37,9 @@ section {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 15px;
 }
 
@@ -95,4 +98,10 @@ footer {
     box-shadow: inset 0px 0px 8px
     rgba(232, 102, 236, 1), 0 0 15px
     rgba(232, 102, 236, 1);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
 }
